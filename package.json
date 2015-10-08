@@ -1,0 +1,24 @@
+{
+  "name": "nodenvconf",
+  "version": "0.1.0",
+  "description": "Load config files if specified and override settings with env values",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "merge",
+    "node",
+    "env",
+    "config",
+    "konphyg"
+  ],
+  "engine": "node >= 4.0.1",
+  "author": "Jan Nahody <jan.nahody@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "konphyg": "^1.4.0",
+    "lodash": "^3.10.1",
+    "string-to-json": "^0.1.0"
+  }
+}

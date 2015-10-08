@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "description": "Load config files if specified and override settings with env values",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/nahody/nodenvconfig.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

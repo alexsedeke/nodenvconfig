@@ -15,7 +15,7 @@ var konphyg  = require('konphyg');
 class nodenvconf {
     /**
      * Constructor
-     * @param  key           default: nodenv
+     * @param  prefix        default: nodenv
      *         delimiter     default: _
      *         configDir     default: null // (__dirname + "/serve/config")
      *
@@ -24,7 +24,7 @@ class nodenvconf {
     constructor(options) {
         // options
         this.options = {
-            key: 'nodenv',
+            prefix: 'nodenv',
             delimiter: '_',
             configDir: null
         };
@@ -64,9 +64,9 @@ class nodenvconf {
         // Process all env keys
         Object.keys(process.env).forEach(function(key) {
             try {
-                if (key.indexOf(self.options.key + self.options.delimiter) === 0) {
+                if (key.indexOf(self.options.prefix + self.options.delimiter) === 0) {
                     let _obj = {};
-                    let _key = key.replace(self.options.key + self.options.delimiter, ''); // do not work. why? => key.slice(-8);
+                    let _key = key.replace(self.options.prefix + self.options.delimiter, ''); // do not work. why? => key.slice(-8);
                     _key = _key.replace(self.options.delimiter, '.');
                     _obj[_key] = process.env[key];
                     let _env = str2json.convert(_obj);

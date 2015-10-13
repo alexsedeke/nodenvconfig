@@ -26,16 +26,17 @@ class nodenvconf {
         this.options = {
             prefix: 'nodenv',
             delimiter: '_',
-            configDir: null
+            configDir: null,
+            configDomain: null
         };
 
         Object.assign(this.options, options );
 
         // hidden properties
-        this._env = {};
-        this._files = {};
+        this._env     = {};
+        this._files   = {};
         this._konphyg = null;
-        this._config = null;
+        this._config  = null;
 
 
         // Init konphyg
@@ -112,7 +113,7 @@ class nodenvconf {
         // Dispatch automatically only first time
         if (this._config === null) {
             this.dispatchEnv();
-            this.dispatchConfig();
+            this.dispatchConfig(this.options.configDomain);
             this._config = {};
 
             _.merge(this._config, this._files, this._env);

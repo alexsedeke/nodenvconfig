@@ -17,7 +17,9 @@
     "config",
     "konphyg"
   ],
-  "engine": "node >= 4.0.1",
+  "engines": {
+    "node": ">= 4.0.0"
+  },
   "author": "Jan Nahody <jan.nahody@gmail.com>",
   "license": "MIT",
   "dependencies": {

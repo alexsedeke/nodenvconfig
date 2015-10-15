@@ -1,5 +1,8 @@
 # nodenvconf
 
+[![NPM Version][npm-image]][npm-url]
+[![Node.js Version][node-version-image]][node-version-url]
+
 **nodenvconf** primary extend the  [konphyg](https://github.com/pgte/konphyg) to read environment variables with predefined prefix 
 and override the static konphyg values.
 
@@ -44,3 +47,12 @@ Is a path for konphyg to the configuration files.
 
 **configDomain**    
 Is a domain for konphyg to read only specified domain(filename) of the configuration files.
+
+# License
+
+[MIT](LICENSE)
+
+[npm-image]: https://img.shields.io/npm/v/nodenvconf.svg
+[npm-url]: https://npmjs.org/package/nodenvconf
+[node-version-image]: https://img.shields.io/node/v/nodenvconf.svg
+[node-version-url]: http://nodejs.org/download/

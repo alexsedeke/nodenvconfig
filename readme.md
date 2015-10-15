@@ -42,5 +42,5 @@ Is a string using as delimiter for object structure.
 **configDir**    
 Is a path for konphyg to the configuration files.
 
-**configDomain**
+**configDomain**    
 Is a domain for konphyg to read only specified domain(filename) of the configuration files.

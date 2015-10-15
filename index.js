@@ -5,14 +5,14 @@ var _        = require('lodash');
 var konphyg  = require('konphyg');
 
 /**
- * CLASS nodenvconf
+ * CLASS NodenvConf
  *
  * Filter node environment variables which starts with specific string and collect them to key/value object.
  * Default settings can be changed trough options. Options.key (default: 'nodenv') describe the variable start string, which will be truncated.
  * Options.delimiter (default: '_') is used as delimiter for the start match string and for creating object depth.
  *
  */
-class nodenvconf {
+class NodenvConf {
     /**
      * Constructor
      * @param  prefix        default: nodenv

@@ -146,4 +146,4 @@ class NodenvConf {
     }
 }
 
-module.exports = nodenvconf;
+module.exports = NodenvConf;

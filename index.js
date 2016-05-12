@@ -68,8 +68,9 @@ class NodenvConf {
                 if (key.indexOf(self.options.prefix + self.options.delimiter) === 0) {
                     let _obj = {};
                     let _key = key.replace(self.options.prefix + self.options.delimiter, ''); // do not work. why? => key.slice(-8);
-                    _key = _key.replace(self.options.delimiter, '.');
-                    _obj[_key] = process.env[key];
+                    let _replacer = new RegExp(self.options.delimiter, 'g');
+                    _key = _key.replace(_replacer, '.');
+                    _.set(_obj, _key, process.env[key]);
                     let _env = str2json.convert(_obj);
 
                     _.merge(self._env, _env);

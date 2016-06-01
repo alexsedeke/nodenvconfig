@@ -1,6 +1,6 @@
 {
     "name": "nodenvconf",
-    "version": "0.3.0",
+    "version": "0.3.1",
     "description": "Load config files if specified and override settings with env values",
     "main": "index.js",
     "repository": {

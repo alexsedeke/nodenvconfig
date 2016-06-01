@@ -77,7 +77,7 @@ class NodenvConf {
                     } catch(error) {
                         // if string handle
                     }
-                    _.set(_obj, _key, process.env[key]);
+                    _.set(_obj, _key, _value);
                     let _env = str2json.convert(_obj);
 
                     _.merge(self._env, _env);

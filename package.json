@@ -1,30 +1,30 @@
 {
-  "name": "nodenvconf",
-  "version": "0.2.2",
-  "description": "Load config files if specified and override settings with env values",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "http://github.com/nahody/nodenvconfig.git"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "merge",
-    "node",
-    "env",
-    "config",
-    "konphyg"
-  ],
-  "engines": {
-    "node": ">= 4.0.0"
-  },
-  "author": "Jan Nahody <jan.nahody@gmail.com>",
-  "license": "MIT",
-  "dependencies": {
-    "konphyg": "^1.4.0",
-    "lodash": "^4.12.0",
-    "string-to-json": "^0.1.0"
-  }
+    "name": "nodenvconf",
+    "version": "0.3.0",
+    "description": "Load config files if specified and override settings with env values",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/nahody/nodenvconfig.git"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "merge",
+        "node",
+        "env",
+        "config",
+        "konphyg"
+    ],
+    "engines": {
+        "node": ">= 4.0.0"
+    },
+    "author": "Jan Nahody <jan.nahody@gmail.com>",
+    "license": "MIT",
+    "dependencies": {
+        "konphyg": "^1.4.0",
+        "lodash": "^4.12.0",
+        "string-to-json": "^0.1.0"
+    }
 }

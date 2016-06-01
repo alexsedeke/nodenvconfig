@@ -70,6 +70,13 @@ class NodenvConf {
                     let _key = key.replace(self.options.prefix + self.options.delimiter, ''); // do not work. why? => key.slice(-8);
                     let _replacer = new RegExp(self.options.delimiter, 'g');
                     _key = _key.replace(_replacer, '.');
+                    let _value = process.env[key];
+                    try {
+                        // if JSON then handle
+                        _value = JSON.parse(process.env[key]);
+                    } catch(error) {
+                        // if string handle
+                    }
                     _.set(_obj, _key, process.env[key]);
                     let _env = str2json.convert(_obj);
 

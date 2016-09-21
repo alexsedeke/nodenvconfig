@@ -108,12 +108,15 @@ class NodenvConf {
 
     /**
      * Dispatch the config files and env variables and merge them to one config.
-     * ENV variables override the static config files.
+     * ENV variables override the custom and static config files.
+     * 
+     * CustomConfig object can be pass to configuration. It override static
+     * config files but will be overriden by ENV variables.
      *
      * @param reload
      * @returns {null}
      */
-    dispatch(reload) {
+    dispatch(customConfig, reload) {
         if (reload === true) {
             this._config = null;
         }
@@ -124,7 +127,7 @@ class NodenvConf {
             this.dispatchConfig(this.options.configDomain);
             this._config = {};
 
-            _.merge(this._config, this._files, this._env);
+            _.merge(this._config, this._files, customConfig || {}, this._env);
         }
 
         return this._config;

@@ -1,6 +1,6 @@
 {
     "name": "nodenvconf",
-    "version": "0.3.1",
+    "version": "0.4.0",
     "description": "Load config files if specified and override settings with env values",
     "main": "index.js",
     "repository": {
@@ -24,7 +24,7 @@
     "license": "MIT",
     "dependencies": {
         "konphyg": "^1.4.0",
-        "lodash": "^4.12.0",
+        "lodash": "^4.16.1",
         "string-to-json": "^0.1.0"
     }
 }
